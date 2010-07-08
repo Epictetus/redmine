@@ -52,6 +52,7 @@ Rails::Initializer.run do |config|
 
   config.gem 'rubytree', :lib => 'tree'
   
+  config.action_controller.session = {:key => 'key', :secret => 'xxxxxxxxxxxxxxxxxxxxxxxxxxxxxx'}
   # Load any local configuration that is kept out of source control
   # (e.g. gems, patches).
   if File.exists?(File.join(File.dirname(__FILE__), 'additional_environment.rb'))
